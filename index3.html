@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Benny Hallett | eat sleep code repeat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/0reset.css" />
+<link rel="stylesheet" href="assets/css/1skeleton.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/syntax.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-9971151-1', 'bennyhallett.com');
+        ga('send', 'pageview');
+
+      </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row header">
+        <a href="http://bennyhallett.com"><img src="assets/img/profile.jpeg" alt="Benny Hallett" class="profile" /></a>
+        <h1><a href="http://bennyhallett.com">Benny Hallett</a></h1>
+        <h2>eat sleep code repeat</h2>
+      </div>
+
+      <div class="row main">
+        <div class="twelve columns alpha">
+          <div class="index">
+  <div id="post">
+  <h3 class="post-title"><a href="2014-03-20-ruby-default-hash-values.html">Default hash values in Ruby</a></h3>
+  <p>Hashes in Ruby have an interesting property in that you can specify a default value for any item in the Hash. When we try to get a value out of a hash that doesn’t exist, we get nil.</p>
+<pre><code>x = Hash.new
+assert_nil x[:empty]</code></pre>
+<p>This isn’t unexpected, but not simply because the value doesn’t exist, but because the default value is nil.</p>
+<p>We can create a new hash with a default value of 1, and when we ask for a value that isn’t in the hash, we get 1.</p>
+<pre><code>x = Hash.new 1
+assert_equal 1, Hash[:default]</code></pre>
+<p>This property can lead to some interesing behaviour when we pass in an array as the default value.</p>
+<pre><code>x = Hash.new []
+x[:one] &lt;&lt; 'one'
+x[:two] &lt;&lt; 'two'</code></pre>
+<p>At first glance, we probably expect <code class="inline">x[:one]</code> to be <code class="inline">['one']</code> and <code class="inline">x[:two]</code> to be <code class="inline">['two']</code>, but this isn’t the case. In fact, both values, as well as any values for keys which don’t exist in the hash, will be <code class="inline">['one', 'two']</code>.</p>
+<p>This is because the default value for the hash isn’t <strong>an</strong> array, it’s <strong>this</strong> array.</p>
+<p>If we want the default value to be a new, empty array, we need to use a block to specify the default value.</p>
+<pre><code>x = Hash.new { [] }
+x[:one] &lt;&lt; 'one'
+x[:two] &lt;&lt; 'two'</code></pre>
+<p>This problem could be used as a good interview question for candidates for a Ruby developer position.</p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
+  <h3 class="post-title"><a href="2014-03-17-7drl-2014.html">7DRL 2014 Postmortem</a></h3>
+  <p>The 7 day roguelike challenge has been and gone for this year, and my participation in it can be summed up in a few words:</p>
+<p><code class="inline">Not enough time.</code></p>
+<p>More specifically, I didn’t have the time available to dedicate to it. I thought the commute time would be enough, but between working, travelling and spending time with my family, there wasn’t much time left for building a roguelike.</p>
+<p>It wasn’t a complete failure though, the game progressed a fair way, and I learned a lot in the process.</p>
+<p><img src="assets/img/spyrl.png" alt="Spyrl title screen"/></p>
+<p><strong>SpyRL features</strong></p>
+<p>The features that were completed in SpyRL include</p>
+<ul>
+<li>Title screen
+</li>
+<li>Help screen
+</li>
+<li>Main game screen
+</li>
+<li>System for displaying messages to the user
+</li>
+<li>Move around the world
+</li>
+<li>Open and close doors
+</li>
+<li>Search containers
+</li>
+<li>Take items from containers
+</li>
+<li>Drop what you’re currently carrying
+</li>
+<li>Attack an enemy in melee combat
+</li>
+<li>Lose health
+</li>
+<li>Enemies move randomly
+</li>
+<li>Enemies attack anyone who moves adjacent to them
+</li>
+</ul>
+<p><img src="assets/img/gspyrl.png" alt="Spyrl game screen"/></p>
+<p>There are a bunch of things missing, such as win and lose states, and traps, that I will add into the game in the future.</p>
+<p><strong>What I learned</strong></p>
+<ul>
+<li>The delve library is missing 2 key features, FoV and Pathing
+</li>
+<li>Other than above, delve is quite usable. The component system works surprisingly well
+</li>
+<li>My rendering code needs some work. The game gets slower at larger console sizes
+</li>
+<li>SpyRL could turn out to be a fun game, I should finish it.
+</li>
+<li>Next year I could plan to take some time off to work on the game.
+</li>
+</ul>
+<p>I won’t be releasing either Delve or Spyrl to <a href="http://rubygems.org">Rubygems</a> just yet. Spyrl isn’t either winnable or losable at the moment, and delve probably needs a FoV feature as well as an A* implementation before it’s ready to be used in the wild.</p>
+
+</div>
+
+<hr class="post-base" />
+<div id="post">
+  <h3 class="post-title"><a href="2014-03-05-delve.html">delve - an opinionated roguelike library for Ruby</a></h3>
+  <p>Delve is an opinionated library for creating roguelikes in the Ruby programming language. It’s flexible enough to let you create your roguelike in any way you please, but it also lets you get up and running quickly if you adhere to it’s style.</p>
+<p>Delve is heavily influcenced by libraries such as libtcod and rot.js. These tools provide handy modules such as Field of View, Dungeon Generation, and Turn Scheduling, that make developing a roguelike that much easier. Delve has continued that trend, and in fact some of the code is ported from rot.js to ruby. Although delve and rot.js share the same license, the rot.js license is included in the delve source for completeness.</p>
+<p>In addition to these roguelike tools, delve provides an additional view system. This system is based on stack-based-screens, and idea that I have spoken about before. In addition to the screen management, delve provides widgets that make developing an ascii user interface easier. Some widgets include a progress bar, menu, screen-border, and a viewport for showing a focussed section of the world inside a panel.</p>
+<p>The game characters and items are intended to be implemented using an entity/component system. The entity, along with basic movement and collision components are included in delve by default.</p>
+<p>At the time of writing, delve isn’t feature complete. Some key features, such as field of view, aren’t yet implemented, but will be in future versions.</p>
+<p>The last big feature of delve is the auto-roguelike. This feature allows developers to create an ‘@ walking around the dungeon’ roguelike in a single simple command</p>
+<pre><code>delve gamename</code></pre>
+<p>To then start the game, you run</p>
+<pre><code>cd gamename
+bundle install
+ruby -Ilib bin/gamename</code></pre>
+<p>This game that you have just created includes:</p>
+<ul>
+<li>A title screen, with ‘New Game’ and ‘Exit’ options.
+</li>
+<li>A loading screen, which sets up the game.
+</li>
+<li>A game screen, in which the user can use the vi keys to move around the world.
+</li>
+</ul>
+<p>Again, this feature is yet to be completed. In the future, the command line will allow developers to pass in arguments stating which renderer they want (i.e curses, or tiles), which turn scheduler to use, as well as which dungeon generator to use. The current defaults are to use the Curses renderer and the rogue algorithm generator. Currently the turn scheduler isn’t used in the game generation, but should be included in v0.0.7</p>
+<p>The list of things included in delve (as of 0.0.6) is:</p>
+<ul>
+<li>Entity system
+</li>
+<li>Stack based screens
+</li>
+<li>Rogue dungeon generator
+</li>
+<li>Noise generator
+</li>
+<li>Cellular automata generator
+</li>
+<li>Turn engine
+</li>
+<li>Several turn schedulers
+</li>
+<li>Movement and Collision components
+</li>
+</ul>
+<p>Delve’s widgets include:</p>
+<ul>
+<li>Border
+</li>
+<li>Key-Value
+</li>
+<li>Menu
+</li>
+<li>MultiLine text
+</li>
+<li>Progress bar
+</li>
+<li>Text
+</li>
+<li>Viewport
+</li>
+</ul>
+<p>The code is licensed under the 3-clause BSD license.</p>
+
+</div>
+
+<hr class="post-base" />
+
+
+  <div class="index-nav">
+    <div class="four columns alpha">
+      <a href="index2.html">Previous Page</a> &nbsp;
+    </div>
+    <div class="four columns alpha omega">&nbsp;</div>
+    <div class="four columns omega pull-right">
+      <a href="index4.html">Next Page</a> &nbsp;
+    </div>
+  </div>
+</div>
+
+        </div>
+        <div class="four columns omega">
+          <div class="sidebar-item">
+            <ul class="nav">
+              <ul><a href="about.html">About me</a></ul>
+              <!-- <ul><a href="projects.html">Projects</a></ul> -->
+            </ul>
+          </div>
+
+          <div class="sidebar-item">
+            <ul class="nav">
+              <ul><a href="http://elixirquiz.github.io" target="_">Elixir Quiz</a></ul>
+              <ul><a href="http://github.com/bennyhallett/obelisk" target="_">Obelisk</a></ul>
+              <ul><a href="http://github.com/bennyhallett/anubis" target="_">Anubis</a></ul>
+              <ul><a href="http://github.com/bennyhallett/elixir-rss" target="_">Elixir RSS</a></ul>
+            </ul>
+          </div>
+
+          <div class="sidebar-item find-me">
+            <a href="http://twitter.com/bennyhallett" target="_"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="http://github.com/bennyhallett" target="_"><i class="fa fa-github fa-2x"></i></a>
+            <a href="http://stackoverflow.com/users/109246/benny" target="_"><i class="fa fa-stack-overflow fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

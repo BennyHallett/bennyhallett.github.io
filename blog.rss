@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+  <title>Benny Hallett</title>
+  <link>http://bennyhallett.com</link>
+  <description>Benny Hallett | Programmer, Footballer, Dad, Elixir Hacker</description>
+  <lastBuildDate>2014-11-22 02:12:37</lastBuildDate>
+  <language>en-us</language>
+<item>
+  <title>Phoenix on Docker</title>
+  <description>[CDATA[ A simple Dockerfile for running a Phoenix app in a Docker container ]]</description>
+  <pubDate>2014-10-12</pubDate>
+  <link>http://bennyhallett.com/2014-10-12-phoenix-on-docker.html</link>
+  <guid>http://bennyhallett.com/2014-10-12-phoenix-on-docker.html</guid>
+</item>
+<item>
+  <title>Parsing and Transformation</title>
+  <description>[CDATA[ Exploring @pragdave's approach to Elixir, with parsing and transformation ]]</description>
+  <pubDate>2014-09-15</pubDate>
+  <link>http://bennyhallett.com/2014-09-15-parsing-and-transformation.html</link>
+  <guid>http://bennyhallett.com/2014-09-15-parsing-and-transformation.html</guid>
+</item>
+<item>
+  <title>Peasant evm (Elixir Version Manager)</title>
+  <description>[CDATA[ Peasant evm (Elixir Version Manager) ]]</description>
+  <pubDate>2014-07-28</pubDate>
+  <link>http://bennyhallett.com/2014-07-28-peasant-evm.html</link>
+  <guid>http://bennyhallett.com/2014-07-28-peasant-evm.html</guid>
+</item>
+<item>
+  <title>Simple Hefeweizen recipe</title>
+  <description>[CDATA[ Simple Hefeweizen recipe ]]</description>
+  <pubDate>2014-04-23</pubDate>
+  <link>http://bennyhallett.com/2014-04-23-simple-hefeweizen.html</link>
+  <guid>http://bennyhallett.com/2014-04-23-simple-hefeweizen.html</guid>
+</item>
+<item>
+  <title>What's the difference between and, or, && and || in Ruby?</title>
+  <description>[CDATA[ What's the difference between and, or, && and || in Ruby? ]]</description>
+  <pubDate>2014-04-16</pubDate>
+  <link>http://bennyhallett.com/2014-04-16-whats-the-difference-between-and-or-in-ruby.html</link>
+  <guid>http://bennyhallett.com/2014-04-16-whats-the-difference-between-and-or-in-ruby.html</guid>
+</item>
+<item>
+  <title>Mocha Easter Egg</title>
+  <description>[CDATA[ Mocha Easter Egg ]]</description>
+  <pubDate>2014-03-29</pubDate>
+  <link>http://bennyhallett.com/2014-03-29-mocha-easter-egg.html</link>
+  <guid>http://bennyhallett.com/2014-03-29-mocha-easter-egg.html</guid>
+</item>
+<item>
+  <title>Default hash values in Ruby</title>
+  <description>[CDATA[ Default hash values in Ruby ]]</description>
+  <pubDate>2014-03-20</pubDate>
+  <link>http://bennyhallett.com/2014-03-20-ruby-default-hash-values.html</link>
+  <guid>http://bennyhallett.com/2014-03-20-ruby-default-hash-values.html</guid>
+</item>
+<item>
+  <title>7DRL 2014 Postmortem</title>
+  <description>[CDATA[  ]]</description>
+  <pubDate>2014-03-17</pubDate>
+  <link>http://bennyhallett.com/2014-03-17-7drl-2014.html</link>
+  <guid>http://bennyhallett.com/2014-03-17-7drl-2014.html</guid>
+</item>
+<item>
+  <title>delve - an opinionated roguelike library for Ruby</title>
+  <description>[CDATA[  ]]</description>
+  <pubDate>2014-03-05</pubDate>
+  <link>http://bennyhallett.com/2014-03-05-delve.html</link>
+  <guid>http://bennyhallett.com/2014-03-05-delve.html</guid>
+</item>
+<item>
+  <title>Joe's Ancient Orange Mead</title>
+  <description>[CDATA[  ]]</description>
+  <pubDate>2013-11-18</pubDate>
+  <link>http://bennyhallett.com/2013-11-18-jao-mead.html</link>
+  <guid>http://bennyhallett.com/2013-11-18-jao-mead.html</guid>
+</item>
+<item>
+  <title>Amarillo Pale Ale</title>
+  <description>[CDATA[ Amarillo Pale Ale ]]</description>
+  <pubDate>2013-11-14</pubDate>
+  <link>http://bennyhallett.com/2013-11-14-amarillo-pale-ale.html</link>
+  <guid>http://bennyhallett.com/2013-11-14-amarillo-pale-ale.html</guid>
+</item>
+<item>
+  <title>Roguelike idea: Terra Australis</title>
+  <description>[CDATA[ Roguelike idea: Terra Australis ]]</description>
+  <pubDate>2013-11-07</pubDate>
+  <link>http://bennyhallett.com/2013-11-07-idea-terra-australis.html</link>
+  <guid>http://bennyhallett.com/2013-11-07-idea-terra-australis.html</guid>
+</item>
+<item>
+  <title>Managing game state with stack-based screens</title>
+  <description>[CDATA[ Managing game state with stack-based screens ]]</description>
+  <pubDate>2013-11-03</pubDate>
+  <link>http://bennyhallett.com/2013-11-03-stack-based-screens.html</link>
+  <guid>http://bennyhallett.com/2013-11-03-stack-based-screens.html</guid>
+</item>
+</channel>
+</rss>
