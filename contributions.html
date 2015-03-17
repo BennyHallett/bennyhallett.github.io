@@ -40,20 +40,18 @@
 
       <div class="row main">
         <div class="nine columns alpha">
-          <div id="post">
-  <h3 class="post-title"><a href="2014-07-28-peasant-evm.html">Peasant evm (Elixir Version Manager)</a></h3>
-  <p>When starting out with Elixir I wanted a way to be able to switch versions easily, without uninstalling a previously installed version. Since Elixir changes frequently, and given it’s young age and that it’s coming up on a stable 1.0 version, it’s not out of the question that some changes will be breaking changes. I’ve had this come up recently, where one library I was using required the 0.14.3 version of Elixir, but another library hadn’t yet been made 0.14.3 compatible, so I had to quickly roll back to 0.14.2.</p>
-<p>Having experience using <a href="http://rvm.io">rvm</a> and <a href="http://github.com/capistrano/capistrano">capistrano</a> in several of my Ruby projects, I was inspired by some of the techniques they use for switching versions, and <a href="https://github.com/BennyHallett/peasant-evm">peasant-evm</a> was born.</p>
-<p>Basically I’ve just got my elixir installs in a directory, each under their own version number, and a <code class="inline">current</code> symlink which points to the one I want to use.</p>
-<pre><code>/opt/elixir/0.14.1
-/opt/elixir/0.14.2
-/opt/elixir/0.14.3
-/opt/elixir/current -&gt; /opt/elixir/0.14.3</code></pre>
-<p>On top of this, I’ve got <code class="inline">/opt/elixir/current/bin</code> in my path, so that I’m always using whichever one <code class="inline">current</code> is pointing to, and a shell script that allows me to quickly switch between versions.</p>
-<pre><code>#! /bin/bash
-rm /opt/elixir/current
-ln -s /opt/elixir/$1 /opt/elixir/current</code></pre>
-<p>As the name suggests, it’s pretty simple at the moment. It might be fun to expand on this further, creating a tool that installs Erlang and different versions of Elixir in much the way that rvm does. The code can be found <a href="https://github.com/BennyHallett/peasant-evm">here</a>.</p>
+          <div id="page">
+  <h2>Projects I've contributed to</h2>
+<ul>
+<li><strong><a href="http://github.com/jekyll/jekyll-compose">Jekyll Compose</a></strong> - a plugin to
+  add composition commands to <a href="http://jekyllrb.com">Jekyll</a>, the static site
+generator written in <a href="http://ruby-lang.org">Ruby</a>. I initially created the
+commands as extensions to Jekyll itself, but it was decided that the changes
+would work better as a plugin. Since moving on to make my own <a href="http://github.com/bennyhallett/obelisk">static site
+generator</a>, I no longer contribute to
+this project.
+</li>
+</ul>
 
 </div>
 

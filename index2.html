@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Benny Hallett | eat sleep code repeat</title>
+    <title>Benny Hallett | thoughts on software engineering</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/0reset.css" />
@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="assets/css/style.css" />
 <link rel="stylesheet" href="assets/css/syntax.css" />
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" />
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel='stylesheet' type='text/css' />
     
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,115 +19,105 @@
 
         ga('create', 'UA-9971151-1', 'bennyhallett.com');
         ga('send', 'pageview');
-
       </script>
   </head>
 
   <body>
     <div class="container">
       <div class="row header">
-        <a href="http://bennyhallett.github.io"><img src="assets/img/profile.jpeg" alt="Benny Hallett" class="profile" /></a>
-        <h1><a href="http://bennyhallett.github.io">Benny Hallett</a></h1>
-        <h2>eat sleep code repeat</h2>
+        <div class="six columns alpha">
+          <h1><a href="/">Benny Hallett</a></h1>
+          <h2>thoughts on software engineering</h2>
+        </div>
+        <div class="six columns omega">
+          <ul class="nav">
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/contributions.html">Contributions</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
       </div>
 
       <div class="row main">
-        <div class="twelve columns alpha">
+        <div class="nine columns alpha">
           <div class="index">
-  <div id="post">
-  <h3 class="post-title"><a href="2014-04-23-simple-hefeweizen.html">Simple Hefeweizen recipe</a></h3>
-  <p>German style wheat beers are some of my favourite beers to drink. I fell in love Hofbrau when I was over in Munich for Oktoberfest, and I’ve tried a few different beers over the last year.</p>
-<p>This is my first attempt at creating a wheat beer, so I wanted to use a simple recipe that could be expanded on into the future.</p>
-<h1>Recipe</h1>
-<p><strong>Recipe Volume</strong>: 23L</p>
-<p><strong>Yeast</strong>: 11.5g Safbrew S33</p>
-<p><strong>Malts</strong>: 2x 1.5kg Morgan’s Wheat liquid malt extract</p>
-<p><strong>Calculated Original Gravity</strong>: 1.039</p>
-<p><strong>Hop additions</strong>:</p>
-<ul>
-<li>20g Tettenanger @ 60 min
-</li>
-<li>30g Tettenanger @ 15 min
-</li>
-</ul>
-<p><strong>Calculated IBUs</strong>: Unknown</p>
-<p><strong>Calculated Final Gravity</strong>: Unknown</p>
-<p><strong>Procedure</strong>:</p>
-<ul>
-<li>Boiled 13 Litres of water, turned off heat and stirred in extract.
-</li>
-<li>Returned to boiling.
-</li>
-<li>Added 20g of Tettenanger hops after the hot break.
-</li>
-<li>Boiled 45 minutes and added 30g of Tettenanger hops.
-</li>
-<li>Cooled pot in ice water bath to reduce temperature.
-</li>
-<li>Added wort to fermenter, and topped up with water to 23L.
-</li>
-<li>Pitched yeast.
-</li>
-</ul>
-<p><strong>Fermentation</strong>:</p>
-<p>Fermenting at between 22 and 24 degrees celsius in the garage.</p>
-<p><strong>Results</strong>:</p>
-<p>Awaiting completion of fermentation.</p>
-
+  <div class="post">
+  <h3 class="post-title">
+    <a href="2014-03-20-ruby-default-hash-values.html">
+      Default hash values in Ruby
+    </a>
+  </h3>
+  <div class="post-date">
+    March 20th, 2014
+  </div>
+  Default hash values in Ruby
 </div>
-
-<hr class="post-base" />
-<div id="post">
-  <h3 class="post-title"><a href="2014-04-16-whats-the-difference-between-and-or-in-ruby.html">What's the difference between and, or, && and || in Ruby?</a></h3>
-  <p>After inheriting my first Rails project, one of the first things that confused me was the multiple boolean logic operators. In Ruby, the operators include:</p>
-<ul>
-<li>&amp;&amp;
-</li>
-<li>||
-</li>
-<li>and
-</li>
-<li>or
-</li>
-</ul>
-<p><code class="inline">==</code> and <code class="inline">===</code> are also included, but we can ignore these for the sake of this post.</p>
-<p><strong>So what’s the difference then?</strong></p>
-<p><em>The first difference is precedence.</em></p>
-<p><code class="inline">&amp;&amp;</code> has the highest precedence, followed by <code class="inline">||</code>. Both and and or have the same precedence.</p>
-<pre><code>false and false or true
-=&gt; true
-
-false and false || true
-=&gt; false</code></pre>
-<p>In the first example here, the expression is evaluated in order. So <code class="inline">false and false</code> is <code class="inline">false</code>, and taking that result, <code class="inline">false or true</code> is <code class="inline">true</code>.</p>
-<p>In the second example, the <code class="inline">||</code> section is evaluated first. So <code class="inline">false || true</code> is <code class="inline">true</code>, and taking that result, <code class="inline">false and true</code> is false.</p>
-<p><em>The other difference is how they are used.</em></p>
-<p>For boolean logic, generally <code class="inline">&amp;&amp;</code> and <code class="inline">||</code> are used.</p>
-<pre><code>def can_read?
-  (daytime? || inside?) &amp;&amp; wearing_glasses?
-end</code></pre>
-<p>The and/or operators are generally used to chain methods together. This can be done because in Ruby, <code class="inline">nil</code> and <code class="inline">false</code> always resolve to <code class="inline">false</code>, where everything else resolves to <code class="inline">true</code>.</p>
-<pre><code>start_engine and drive</code></pre>
-<p>In the example above, if the engine fails to start, then the vehicle won’t drive. Another example may be the movement of a child. </p>
-<pre><code>def move
-  walk or crawl or roll
-end</code></pre>
-<p>In this example, a child can move in multiple ways, but prefers the most efficient method. They will attempt to walk, and only attemt to crawl if walking fails. Similarly, they will only attempt to roll if crawling fails.</p>
-<p>Chaining methods together like this is a useful tool for creating clean, easy to understand code.</p>
-
+<div class="post">
+  <h3 class="post-title">
+    <a href="2014-03-17-7drl-2014.html">
+      7DRL 2014 Postmortem
+    </a>
+  </h3>
+  <div class="post-date">
+    March 17th, 2014
+  </div>
+  Postmortem from my attempt at the 2014 7 day roguelike challenge
 </div>
-
-<hr class="post-base" />
-<div id="post">
-  <h3 class="post-title"><a href="2014-03-29-mocha-easter-egg.html">Mocha Easter Egg</a></h3>
-  <p>There’s a neat little easter egg hidden within the <a href="https://github.com/freerange/mocha">Mocha</a> source code.</p>
-<pre><code>thing.expects(:the_spanish_inquisition)
-Mocha::ExpectationError: NOBODY EXPECTS THE SPANISH INQUISITION!</code></pre>
-<p>You can see the code on <a href="https://github.com/freerange/mocha/blob/master/lib/mocha/object_methods.rb#L66">the Mocha Github page</a></p>
-
+<div class="post">
+  <h3 class="post-title">
+    <a href="2014-03-05-delve.html">
+      delve - an opinionated roguelike library for Ruby
+    </a>
+  </h3>
+  <div class="post-date">
+    March 5th, 2014
+  </div>
+  A library for creating roguelikes in Ruby
 </div>
-
-<hr class="post-base" />
+<div class="post">
+  <h3 class="post-title">
+    <a href="2013-11-18-jao-mead.html">
+      Joe's Ancient Orange Mead
+    </a>
+  </h3>
+  <div class="post-date">
+    November 18th, 2013
+  </div>
+  Recipe for Joe's Ancient Orange Mead
+</div>
+<div class="post">
+  <h3 class="post-title">
+    <a href="2013-11-14-amarillo-pale-ale.html">
+      Amarillo Pale Ale
+    </a>
+  </h3>
+  <div class="post-date">
+    November 14th, 2013
+  </div>
+  Amarillo Pale Ale
+</div>
+<div class="post">
+  <h3 class="post-title">
+    <a href="2013-11-07-idea-terra-australis.html">
+      Roguelike idea: Terra Australis
+    </a>
+  </h3>
+  <div class="post-date">
+    November 7th, 2013
+  </div>
+  Roguelike idea: Terra Australis
+</div>
+<div class="post">
+  <h3 class="post-title">
+    <a href="2013-11-03-stack-based-screens.html">
+      Managing game state with stack-based screens
+    </a>
+  </h3>
+  <div class="post-date">
+    November 3rd, 2013
+  </div>
+  Managing game state with stack-based screens
+</div>
 
 
   <div class="index-nav">
@@ -136,34 +126,53 @@ Mocha::ExpectationError: NOBODY EXPECTS THE SPANISH INQUISITION!</code></pre>
     </div>
     <div class="four columns alpha omega">&nbsp;</div>
     <div class="four columns omega pull-right">
-      <a href="index3.html">Next Page</a> &nbsp;
+       &nbsp;
     </div>
   </div>
 </div>
 
         </div>
-        <div class="four columns omega">
+        <div class="three columns omega">
+          <div class="centered">
+            <img src="assets/img/profile.jpeg" alt="Benny Hallett" class="profile" />
+          </div>
           <div class="sidebar-item">
-            <ul class="nav">
-              <ul><a href="about.html">About me</a></ul>
-              <!-- <ul><a href="projects.html">Projects</a></ul> -->
+            <ul class="side-nav">
+              <p>
+                <em>Hey there, I'm Benny Hallett</em> I'm a software engineer from the Central Coast of NSW, Australia.
+              </p>
+
+              <p class="find-me centered">
+                <a href="http://twitter.com/bennyhallett" target="_"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="http://github.com/bennyhallett" target="_"><i class="fa fa-github fa-2x"></i></a>
+                <a href="http://stackoverflow.com/users/109246/benny" target="_"><i class="fa fa-stack-overflow fa-2x"></i></a>
+              </p>
+
+              <p>
+              I like to write software in both <a href="http://ruby-lang.org">Ruby</a> and <a href="http://elixir-lang.org">Elixir</a> and sometimes publish articles about that.
+              </p>
+              <p>
+                Recently I've become more interested in the human aspects of software engineering, and will be exploring that more often.
+              </p>
+              <p>
+                Want to <a href="about.html">know more?</a>
+              </p>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="sidebar-item">
-            <ul class="nav">
-              <ul><a href="http://elixirquiz.github.io" target="_">Elixir Quiz</a></ul>
-              <ul><a href="http://github.com/bennyhallett/obelisk" target="_">Obelisk</a></ul>
-              <ul><a href="http://github.com/bennyhallett/anubis" target="_">Anubis</a></ul>
-              <ul><a href="http://github.com/bennyhallett/elixir-rss" target="_">Elixir RSS</a></ul>
-            </ul>
-          </div>
-
-          <div class="sidebar-item find-me">
-            <a href="http://twitter.com/bennyhallett" target="_"><i class="fa fa-twitter fa-2x"></i></a>
-            <a href="http://github.com/bennyhallett" target="_"><i class="fa fa-github fa-2x"></i></a>
-            <a href="http://stackoverflow.com/users/109246/benny" target="_"><i class="fa fa-stack-overflow fa-2x"></i></a>
-          </div>
+    <div class="row footer">
+      <div class="container">
+        <div class="four columns alpha">
+          <h5>site</h5>
+          <ul>
+            <li><a href="/">blog</a></li>
+            <li><a href="/projects.html">projects</a></li>
+            <li><a href="/contributions.html">contributions</a></li>
+            <li><a href="/about.html">about</a></li>
+          </ul>
         </div>
       </div>
     </div>

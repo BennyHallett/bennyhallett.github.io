@@ -4,8 +4,15 @@
   <title>Benny Hallett</title>
   <link>http://bennyhallett.com</link>
   <description>Benny Hallett | Programmer, Footballer, Dad, Elixir Hacker</description>
-  <lastBuildDate>2014-12-16 11:06:37</lastBuildDate>
+  <lastBuildDate>2015-03-17 11:38:39</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Flow</title>
+  <description>[CDATA[ You probably know what it's like to be in the zone. You're completely focussed on what you're doing and the whole world melts away. You perform your tasks with ease, and hours can pass in the blink of an eye. That's Flow. ]]</description>
+  <pubDate>2015-01-30</pubDate>
+  <link>http://bennyhallett.com/2015-01-30-flow.html</link>
+  <guid>http://bennyhallett.com/2015-01-30-flow.html</guid>
+</item>
 <item>
   <title>Phoenix on Docker</title>
   <description>[CDATA[ A simple Dockerfile for running a Phoenix app in a Docker container ]]</description>
@@ -57,21 +64,21 @@
 </item>
 <item>
   <title>7DRL 2014 Postmortem</title>
-  <description>[CDATA[  ]]</description>
+  <description>[CDATA[ Postmortem from my attempt at the 2014 7 day roguelike challenge ]]</description>
   <pubDate>2014-03-17</pubDate>
   <link>http://bennyhallett.com/2014-03-17-7drl-2014.html</link>
   <guid>http://bennyhallett.com/2014-03-17-7drl-2014.html</guid>
 </item>
 <item>
   <title>delve - an opinionated roguelike library for Ruby</title>
-  <description>[CDATA[  ]]</description>
+  <description>[CDATA[ A library for creating roguelikes in Ruby ]]</description>
   <pubDate>2014-03-05</pubDate>
   <link>http://bennyhallett.com/2014-03-05-delve.html</link>
   <guid>http://bennyhallett.com/2014-03-05-delve.html</guid>
 </item>
 <item>
   <title>Joe's Ancient Orange Mead</title>
-  <description>[CDATA[  ]]</description>
+  <description>[CDATA[ Recipe for Joe's Ancient Orange Mead ]]</description>
   <pubDate>2013-11-18</pubDate>
   <link>http://bennyhallett.com/2013-11-18-jao-mead.html</link>
   <guid>http://bennyhallett.com/2013-11-18-jao-mead.html</guid>
