@@ -100,3 +100,10 @@ img.profile {
 .main a:hover, .footer a:hover {
   text-decoration: underline;
 }
+
+code.inline {
+  white-space: pre!important;
+  font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace!important;
+  color: #222!important;
+  font-size: 0.95em!important;
+}

@@ -4,8 +4,15 @@
   <title>Benny Hallett</title>
   <link>http://bennyhallett.com</link>
   <description>Benny Hallett | Programmer, Footballer, Dad, Elixir Hacker</description>
-  <lastBuildDate>2015-03-17 11:38:39</lastBuildDate>
+  <lastBuildDate>2015-05-21 07:12:33</lastBuildDate>
   <language>en-us</language>
+<item>
+  <title>Creating a command line app in Elixir with Anubis, Part one.</title>
+  <description>[CDATA[ Learn how to create a simple command line application using Elixir and the Anubis framework. We will be creating a simple application to manage our TODO lists. In part one we will be creating our TODO library. ]]</description>
+  <pubDate>2015-05-06</pubDate>
+  <link>http://bennyhallett.com/2015-05-06-elixir-command-line-app-with-anubis.html</link>
+  <guid>http://bennyhallett.com/2015-05-06-elixir-command-line-app-with-anubis.html</guid>
+</item>
 <item>
   <title>Flow</title>
   <description>[CDATA[ You probably know what it's like to be in the zone. You're completely focussed on what you're doing and the whole world melts away. You perform your tasks with ease, and hours can pass in the blink of an eye. That's Flow. ]]</description>
