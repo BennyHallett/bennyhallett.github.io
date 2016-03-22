@@ -1,0 +1,126 @@
+.site-header {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 50px; }
+
+.page-content {
+  margin-left: 270px;
+  max-width: 530px; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5 {
+  color: #B95003;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #3042D6;
+  text-decoration: none; }
+
+a:hover {
+  color: #000E80; }
+
+.site-nav {
+  margin-top: 10px; }
+
+.site-nav a {
+  color: white;
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1.3em;
+  text-decoration: none; }
+
+.site-nav a:hover {
+  color: #B95003; }
+
+.site-header {
+  background: #292626;
+  color: white; }
+
+@media (max-width: 780px) {
+  .site-header {
+    padding: 50px 20px;
+    width: 150px; }
+
+  .page-content {
+    margin-left: 170px; } }
+@media (max-width: 680px) {
+  .site-header {
+    display: block;
+    position: inherit;
+    width: 100%;
+    padding: 10px; }
+
+  .site-nav {
+    margin: 0;
+    text-align: center; }
+
+  .site-nav a {
+    display: inline-block;
+    font-size: 1.0em;
+    text-decoration: none;
+    margin: 10px 12px; }
+
+  .page-content {
+    margin-left: 0;
+    padding: 15px; }
+
+  body {
+    min-width: 320px; } }
+.post-list {
+  list-style: none; }
+
+.post-list li {
+  margin-bottom: 10px; }
+
+.post-link {
+  font-size: 0.9em;
+  text-decoration: none; }
+
+.post-meta {
+  font-size: 0.8em;
+  color: #6a5a5a; }
+
+.book-image {
+  height: 125px;
+  float: left;
+  margin: 0 10px 10px 0; }
+
+.book-header img {
+  float: right;
+  height: 125px;
+  vertical-align: top; }
+
+.button {
+  border: 1px solid #17269E;
+  border-radius: 3px;
+  padding: 10px 17px;
+  margin-right: 10px;
+  display: inline-block;
+  background: #3042D6;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px #878; }
+
+.button:hover {
+  color: white;
+  background: #000E80;
+  border-color: #333; }
+
+.book-title {
+  margin-bottom: 0; }
+
+.book-author {
+  margin-top: 0; }

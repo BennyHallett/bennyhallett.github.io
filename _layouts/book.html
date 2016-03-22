@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="book" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="book-header">
+    <img src="/images/{{ page.image }}" alt="{{ page.title }}" class="book-image" />
+    <h1 class="book-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="book-author">
+      by {{ page.author }}
+    </p>
+    <div class="getit">
+      <a class="button" href="{{ page.booklink }}" data-name="bookAffiliate" data-category="{{ page.gaid }}" target="_blank">Get a copy!</a>
+    </div>
+  </header>
+
+  <div class="book-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>

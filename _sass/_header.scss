@@ -1,0 +1,63 @@
+.site-nav {
+  margin-top: 10px;
+}
+
+.site-nav a {
+  color: white;
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #B95003;
+}
+
+.site-header {
+  background: #292626;
+  color: white;
+}
+
+
+@media (max-width: 780px) {
+  .site-header {
+    padding: 50px 20px;
+    width: 150px;
+  }
+
+  .page-content {
+    margin-left: 170px;
+  }
+}
+
+
+@media (max-width: 680px) {
+  .site-header {
+    display: block;
+    position: inherit;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .site-nav {
+    margin: 0;
+    text-align: center;
+  }
+
+  .site-nav a {
+    display: inline-block;
+    font-size: 1.0em;
+    text-decoration: none;
+    margin: 10px 12px;
+  }
+
+  .page-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  body {
+    min-width: 320px;
+  }
+}

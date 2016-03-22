@@ -1,0 +1,38 @@
+.book-image {
+  height: 125px;
+  float: left;
+  margin: 0 10px 10px 0;
+  
+}
+
+.book-header img {
+  float: right;
+  height: 125px;
+  vertical-align: top;
+}
+
+.button {
+  border: 1px solid #17269E;
+  border-radius: 3px;
+  padding: 10px 17px;
+  margin-right: 10px;
+  display: inline-block;
+  background: #3042D6;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px #878;
+}
+
+.button:hover {
+  color: white;
+  background: #000E80;
+  border-color: #333;
+}
+
+.book-title {
+  margin-bottom: 0;
+}
+
+.book-author {
+  margin-top: 0;
+}
