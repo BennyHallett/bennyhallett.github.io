@@ -10,8 +10,10 @@ now (In order of time spent).
 
 * Working my job as a software engineer
 * Spending *quality* time with my family
-* Building [these projects](/projects)
-* Reading [these books](/books)
+* Building [Candle Maker Pro](http://candlemakerpro.com)
+* Reading [Hacking - The art of
+  exploitation](https://www.nostarch.com/hacking2.htm)
+* Learning [Elm](http://elm-lang.org)
 * [Weightlifting](http://stronglifts.com) and following the [Slow carb
   diet](http://fourhourbody.com)
 
