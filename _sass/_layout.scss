@@ -38,3 +38,19 @@ a {
 a:hover {
   color: #000E80;
 }
+
+@media (max-width: 680px) {
+  .page-content {
+    max-width: 100%;
+    overflow: hidden;
+  }
+}
+
+.highlighter-rouge {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.highlight {
+  overflow: scroll;
+}
