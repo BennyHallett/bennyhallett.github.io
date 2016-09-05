@@ -13,7 +13,7 @@ continues until we part with it.
 I consider myself a minimalist, but these costs still apply whether you're
 interested in minimalism or not, and it pays to be aware of them.
 
-#### Purchase
+### Purchase
 
 We have to bear the initial cost of the item, unless it's gifted to us or is
 free. This cost comes at various thresholds depending on how we value the item
@@ -27,9 +27,9 @@ for a better purpose? Could we use it to pay off any debts we have? Save it?
 Or maybe invest it? Could we use it to have a good experience with our family or
 friends instead?
 
-#### Storage
+### Storage
 
-It costs me space in my home to keep this item, as well as some extra money since my
+It costs me space in my home to keep this item, as well as some extra money since m o
 home needs to be (if only slightly) larger to store it.
 
 If we (for the sake of simple maths) say that I live in a 100m/sq home and pay $300
@@ -41,7 +41,7 @@ that we own and never use, then we're paying quite a bit for the storage of usel
 things. Eliminating all of these would let us live in a smaller home, which
 costs us less.
 
-#### Maintenance
+### Maintenance
 
 There is a cost associated with keeping stuff maintained in your home.
 
@@ -56,7 +56,7 @@ When we move house, they need to be packed, and moved, and possibly unpacked.
 When we're looking for something, they need to be moved, or searched through.
 And when we're cleaning, they need to be cleaned, or cleaned around.
 
-#### Mental
+### Mental
 
 We endure a mental cost for the things we own.
 

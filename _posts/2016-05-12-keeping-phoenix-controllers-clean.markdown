@@ -34,7 +34,7 @@ The solution that I've come across is very similar to the one that I use in
 Rails. It involves moving all of the logic into a separate module (or modules), which I've
 been calling `Operations`.
 
-## Operations
+### Operations
 
 The purpose of an Operation is to encapsulate a single behavior of an
 application into a single module.

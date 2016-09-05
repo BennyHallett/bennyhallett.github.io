@@ -1,119 +1,33 @@
-.site-nav {
-  margin-top: 10px;
-}
-
-.site-nav__icon {
-  width: 35px;
-  font-size: .9em!important;
-}
-
-.brand {
-  margin-bottom: 50px;
-}
-
-.brand-text {
-  font-size: 1.3em;
-  font-family: 'Roboto', sans-serif;
-  color: #ddd;
-}
-
-.brand-text:hover {
-  color: #ddd;
-}
-
-.brand-text--strong {
-  font-weight: bold;
-}
-
-.brand-text--small {
-  display: none;
-}
-
-.site-nav a {
-  color: #ddd;
-  display: block;
-  margin-bottom: 7px;
-  font-size: 1.3em;
-  text-decoration: none;
-}
-
-.site-nav a:hover {
-  // color: #B95003;
-  color: #999;
-}
-
 .site-header {
-  background: #292626;
-  color: #ddd;
-}
-
-
-@media (max-width: 780px) {
-  .site-header {
-    padding: 50px 20px;
-    width: 150px;
-  }
-
-  .page-content {
-    margin-left: 170px;
-  }
-}
-
-
-@media (max-width: 680px) {
-  .site-header {
-    display: block;
+    background: $transparent-black;
+    color: $white;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 10px;
-    height: inherit;
-    box-shadow: 0 4px 12px #999;
-  }
 
-  .site-nav {
-    margin: 0;
-    float: right;
-  }
+    .brand, nav {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
 
-  .site-nav a {
-    display: inline-block;
-    font-size: 1.0em;
-    text-decoration: none;
-    margin: 0 3px;
-  }
+    a {
+        color: white;
+        text-decoration: none;
+    }
 
-  .page-content {
-    margin-left: 0;
-    margin-top: 30px;
-    padding: 15px 30px;
-  }
+    nav {
+        float: right;
 
-  body {
-    min-width: 320px;
-  }
+        a {
+            margin-left: 10px;
+            i {
+                margin-right: 5px;
+            }
 
-  .nav-text {
-    display: none;
-  }
-
-  .site-nav__icon {
-    padding: 1px 10px;
-    width: inherit;
-    font-size: 1.2em!important;
-    text-align: center;
-  }
-
-  .brand {
-    display: inline-block;
-    margin-bottom: 0;
-  }
+            &:hover {
+                color: $highlight;
+            }
+        }
+    }
 }
 
-@media (max-width: 460px) {
-
-  .site-nav__icon {
-    padding: 1px 2px;
-  }
-}

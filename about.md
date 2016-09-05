@@ -9,7 +9,7 @@ live there with my wife, son and daughter.
 
 I'm a passionate programmer who loves learning new things. At the moment I'm
 learning to build systems using [Elixir](http://elixir-lang.org) and
-[Elm](http://elm-lang.org). I'm also interested in application security.
+[Elm](http://elm-lang.org).
 
 I'm a minimalist. Technically I'm a really bad minimalist, but the ideas behind
 minimalism really resonate with me and I'm always trying to reduce the amount of

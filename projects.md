@@ -4,7 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-* [bennyhallett.com](http://github.com/bennyhallett/bennyhallett.github.io) The code that runs this site
-* [Rojojo](http://rojojo.com.au) My software development company
-* [Candle Maker Pro](http://candlemakerpro.com) Tools for helping people who
-  make candles.
+* [bennyhallett.com](https://github.com/bennyhallett/bennyhallett.github.io) - The code that runs this site. Created with Jekyll
+* [Football ELO Tracker](https://elo.bennyhallett.com) - Track football results amongst friends - good for FIFA tournaments. Created with Elm [Source Code](https://github.com/bennyhallett/elo)
+* [Various other incomplete projects](https://github.com/bennyhallett)

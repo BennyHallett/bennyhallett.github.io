@@ -1,56 +1,9 @@
-.site-header {
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding: 50px;
+.container {
+  margin: 0 auto;
+  max-width: $width;
+  padding: 1em;
 }
 
-.page-content {
-  margin-left: 270px;
-  max-width: 530px;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-size: 15px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5 {
-  color: #B95003;
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #3042D6;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #000E80;
-}
-
-@media (max-width: 680px) {
-  .page-content {
-    max-width: 100%;
-    overflow: hidden;
-  }
-}
-
-.highlighter-rouge {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-.highlight {
-  overflow: scroll;
+.main {
+    padding-top: 70px;
 }

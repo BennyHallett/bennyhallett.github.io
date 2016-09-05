@@ -1,0 +1,56 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  margin: 0;
+  padding: 0;
+  line-height: $line-height-default;
+  color: $text-color-default;
+  background: $background-color-default;
+}
+
+h1 {
+  font-weight: $font-weight-thick;
+  font-size: $font-size-thick;
+  margin: $font-size-thick / 2 0;
+}
+
+h2 {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-medium;
+  margin: $font-size-medium / 2 0;
+}
+
+h3 {
+  font-weight: $font-weight-thin;
+  font-size: $font-size-thin;
+  margin: $font-size-thin / 2 0;
+}
+
+code, pre {
+    background: $background-color-code;
+}
+
+code {
+  padding: $padding-code;
+  vertical-align: text-bottom;
+  font-size: $font-size-code;
+  line-height: $font-spacing-code;
+}
+
+pre {
+  padding: 1em;
+}
+
+a {
+    color: $highlight;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $dark-highlight;
+}

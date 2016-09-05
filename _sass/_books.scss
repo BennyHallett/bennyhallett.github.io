@@ -1,39 +1,35 @@
+.book-item {
+    border-bottom: 1px dashed $light-highlight;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    .post-meta {
+        display: block;
+        font-size: $font-size-small;
+    }
+
+}
+
 .book-image {
-  height: 125px;
-  float: left;
-  margin: 0 10px 10px 0;
-  
+    max-height: 120px;
+    max-width: 85px;
+    float: left;
+    margin-right: 10px;
 }
 
-.book-header img {
-  float: right;
-  height: 125px;
-  vertical-align: top;
+.book .book-header {
+    margin-bottom: 65px;
 }
 
-.button {
-  border: 1px solid #17269E;
-  border-radius: 3px;
-  padding: 10px 17px;
-  margin-right: 10px;
-  display: inline-block;
-  background: #3042D6;
-  color: white;
-  font-weight: bold;
-  box-shadow: 2px 2px 2px #878;
-  font-family: 'Roboto', sans-serif;
-}
-
-.button:hover {
-  color: white;
-  background: #000E80;
-  border-color: #333;
-}
-
-.book-title {
-  margin-bottom: 0;
+.book .book-title {
+    margin-bottom: 0;
 }
 
 .book-author {
-  margin-top: 0;
+    margin: 0;
+}
+
+.book-content {
+    margin-top: 35px;
 }
