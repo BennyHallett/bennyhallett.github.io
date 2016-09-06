@@ -4,6 +4,7 @@ title:  "Keeping Phoenix Controllers Clean"
 date:   2016-05-12 08:22:00 +1000
 for:    blog
 gaid:   "clean-controllers"
+permalink: "/keeping-phoenix-controllers-clean/"
 ---
 
 As I've been working on my recent Elixir project [Candle Maker

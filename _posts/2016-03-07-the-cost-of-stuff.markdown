@@ -4,6 +4,7 @@ title:  "The cost of stuff"
 date:   2016-03-07 18:13:20 +1100
 for: blog
 gaid: "costofstuff-post"
+permalink: "/the-cost-of-stuff/"
 ---
 
 The things that we own, whether received as a gift, purchased, or even picked up

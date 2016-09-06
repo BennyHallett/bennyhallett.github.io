@@ -32,10 +32,10 @@ tools such as [Vault][vault-site]
 I'd love to see this configuration module incorporated in the `Application` module of Elixir itself - there's
 already 1 or 2 people asking for this on the gist.
 
-[twelve-factor]: https://12factor.net
+[twelve-factor]: https://12factor.net/
 [exrm-github]: https://github.com/bitwalker/exrm
 [distillery-github]: https://github.com/bitwalker/distillery
-[phoenix-config]: https://github.com/phoenixframework/config
-[plataformatec-solution]: https://blog.plataformatec.com/lalala
-[bitwalker-gist]: https://gist.github.com/bitwalker/lalala
-[vault-site]: https://hashicorp.com/vault
+[phoenix-config]: http://www.phoenixframework.org/docs/advanced-deployment
+[plataformatec-solution]: http://blog.plataformatec.com.br/2016/05/how-to-config-environment-variables-with-elixir-and-exrm/
+[bitwalker-gist]: https://gist.github.com/bitwalker/a4f73b33aea43951fe19b242d06da7b9
+[vault-site]: https://www.vaultproject.io/

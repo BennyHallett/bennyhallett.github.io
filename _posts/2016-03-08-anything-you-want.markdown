@@ -11,6 +11,7 @@ thoughts: "A very inspiring book containing many lessons learned during Derek's
 time building CD Baby. I recommend getting a copy of the audio book, read by
 Derek himself"
 gaid: "anythingyouwant-book"
+permalink: "/books/anything-you-want/"
 ---
 
 I've begun taking [Derek's](http://sivers.org) approach to reading, by taking

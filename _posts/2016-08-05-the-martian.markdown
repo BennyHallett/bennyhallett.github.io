@@ -1,9 +1,9 @@
 ---
 layout: book
 title:  "The Martian"
-author: "??"
-booklink: "http://example.com"
-date:   2016-08-04 10:00:00 +1000
+author: "Andy Weir"
+booklink: "https://www.amazon.com/Martian-Andy-Weir/dp/1491526513"
+date: 2016-08-04 10:00:00 +1000
 for: books
 rating: 10
 image: the-martian.jpg
