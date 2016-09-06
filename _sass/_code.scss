@@ -1,0 +1,10 @@
+.highlighter-rouge {
+    width: 100%;
+    disply: block;
+    overflow-x: scroll;
+
+    .highlight {
+        width: 100%;
+        overflow: overlay;
+    }
+}
