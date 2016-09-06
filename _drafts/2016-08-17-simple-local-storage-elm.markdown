@@ -38,12 +38,15 @@ can take one of the early Elm example apps - the counter - and store it's state 
 
 Here's where we start - the [original counter code][counter-code]
 
+I also like to create my projects using the [elm webpack starter][elm-webpack-starter]
+
 * Writing to local storage - port + coder
 * Reading from local storage on startup - port + coder
 * Loading State
 
 [local-storage]: https://mozilla.org/local-storage
 [evan-twitter]: https://twitter.com/evancz
-[native-storage]: https://github.com/evancz/elm-local-storage
+[native-storage]: https://github.com/elm-lang/persistent-cache
 [elo-site]: https://elo.bennyhallett.com
-[counter-code]: https://guide.elm-lang.org
+[counter-code]: http://guide.elm-lang.org/architecture/user_input/buttons.html
+[elm-webpack-starter]: https://github.com/moarwick/elm-webpack-starter
