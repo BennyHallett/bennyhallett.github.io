@@ -10,6 +10,20 @@
         .post-meta {
             display: inline-block;
             float: right;
+            font-size: $font-size-small;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .post-list {
+        .post-list__item {
+            .post-meta {
+                float: none;
+                display: block;
+                margin-bottom: 5px;
+            }
         }
     }
 }
